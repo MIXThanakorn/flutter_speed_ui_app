@@ -71,23 +71,28 @@ class _D05PageUIState extends State<D05PageUI> {
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.025),
                 Row(
-                  children: [
-                    SizedBox(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: List.generate(4, (index) {
+                    return SizedBox(
                       height: MediaQuery.of(context).size.height * 0.09,
                       width: MediaQuery.of(context).size.width * 0.15,
                       child: TextField(
+                        maxLength: 1,
                         keyboardType: TextInputType.number,
+                        textAlign: TextAlign.center,
+                        textInputAction: TextInputAction.next,
                         decoration: InputDecoration(
+                          counterText: '',
                           fillColor: Colors.white,
                           filled: true,
-                          border: UnderlineInputBorder(
+                          border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none,
                           ),
                         ),
+                        onChanged: (value) {},
                       ),
-                    ),
-                  ],
+                    );
+                  }),
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.03),
                 ElevatedButton(

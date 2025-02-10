@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class D07PageUI extends StatefulWidget {
@@ -13,6 +12,14 @@ class _D07PageUIState extends State<D07PageUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: Padding(
+        padding: EdgeInsets.only(left: 30, right: 30),
+        child: Center(
+          child: Column(
+            children: [],
+          ),
+        ),
+      ),
     );
   }
 }

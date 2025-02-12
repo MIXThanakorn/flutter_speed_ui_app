@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
+
 import 'package:flutter_speed_ui_app/views/home_ui.dart';
 
 void main() {
